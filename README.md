@@ -11,12 +11,11 @@ Express API for the UserFlow dashboard.
 ## Setup
 
 ```bash
-cd "c:\Users\Admin\Desktop\my-api"
+cd c:\Users\Admin\Desktop\my-api
 npm install
-cp .env.example .env
 ```
 
-Then edit `.env` with your PostgreSQL credentials.
+No database setup needed — the app uses SQLite automatically.
 
 ## Run
 
@@ -28,13 +27,9 @@ The API listens on `http://localhost:5000`.
 
 ## Database
 
-The backend uses PostgreSQL and `pg` to connect with these environment variables:
+The backend uses **SQLite** for data storage. The database file (`users.db`) is created automatically on first run and stored locally.
 
-- `PGUSER`
-- `PGHOST`
-- `PGDATABASE`
-- `PGPASSWORD`
-- `PGPORT`
+No environment variables or external database setup required.
 
 ## License
 
